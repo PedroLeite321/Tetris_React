@@ -1,6 +1,9 @@
+import { setStage } from "../gameStageSetup";
+
 import Display from "./Display";
 import Stage from "./Stage";
 import StartButton from "./StartButton";
+
 
 const Tetris = () =>    {
     const score = 0;
@@ -8,14 +11,14 @@ const Tetris = () =>    {
     const level = 1;
 
     return( 
-        <>
-            <Stage/>
+        <>           
             <aside>
+                <Stage stage={ setStage() }/>
                 <Display text={score}/>
                 <Display text={rows}/>
                 <Display text={level}/>
-            </aside>
-            < StartButton />
+                <StartButton/>
+            </aside>            
         </>
     )
 }

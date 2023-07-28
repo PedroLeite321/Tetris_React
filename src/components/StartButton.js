@@ -1,7 +1,9 @@
 
-const StartButton = ({ callback }) =>   {
-    <>
-        <h1>StartGame</h1>
-    </>
+const StartButton = () =>   {
+    return (
+        <>
+            <input type="button" value="Start Game" />
+        </>
+    )
 }
 export default StartButton;
